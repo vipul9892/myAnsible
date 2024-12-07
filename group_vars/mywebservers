@@ -1,3 +1,4 @@
 ---
 key: value
 mywebserverpack: apache2
+myjavapack: openjdk-17-jdk
