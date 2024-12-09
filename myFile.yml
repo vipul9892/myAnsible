@@ -1,0 +1,5 @@
+---
+    - name: vreate a file
+      file:
+        path: \Users\!!OM NAMAH SHIVAY!!\OneDrive\Desktop\myfirstfile
+        state: touch

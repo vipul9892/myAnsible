@@ -1,0 +1,20 @@
+---
+- hosts: 172.31.2.50
+  become: yes
+  tasks:
+    - include_tasks: myFile.yml
+    - name: create myFolder
+      file:
+        path: \Users\!!OM NAMAH SHIVAY!!\OneDrive\Desktop\myFolder
+        state: directory
+
+    - name: copy a file into myFolder
+      copy:
+        src: mystaticfile
+        dest: \Users\!!OM NAMAH SHIVAY!!\OneDrive\Desktop\myFolder\mystaticfile
+
+    - name: i want ro download internet file
+      get_url: 
+        url: https://github.com/vipul9892/myAnsible/blob/main/myfirstplaybook.yml
+        dest: \Users\!!OM NAMAH SHIVAY!!\OneDrive\Desktop\myFolder
+        force_basic_auth: yes
