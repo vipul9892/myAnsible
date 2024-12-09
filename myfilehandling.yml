@@ -18,3 +18,8 @@
         url: https://github.com/vipul9892/myAnsible/blob/main/myfirstplaybook.yml
         dest: \Users\!!OM NAMAH SHIVAY!!\OneDrive\Desktop\myFolder
         force_basic_auth: yes
+
+    - name: install webserver
+      apt:
+        name: apache2
+        state: present
