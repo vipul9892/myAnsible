@@ -23,3 +23,8 @@
       apt:
         name: apache2
         state: present
+
+    - name: change my index page
+      template:
+        src: myindex.j2
+        dest: /var/www/html/index.html
