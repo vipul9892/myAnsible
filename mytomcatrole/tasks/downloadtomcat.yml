@@ -1,0 +1,17 @@
+---
+- name: download tomcat
+  get_url:
+    url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.34/bin/apache-tomcat-10.1.34.tar.gz
+    dest: /home/vip/apache-tomcat-10.1.34.tar.gz
+    force_basic_auth: yes
+
+- name: create tomcat folder
+  file:
+    path: /opt/tomcat
+    state: directory
+
+- name: extract tomcat tar file
+  unarchieve:
+    src: /home/vip/apache-tomcat-10.1.34.tar.gz
+    dest: /opt/tomcat
+    remote_src: yes
