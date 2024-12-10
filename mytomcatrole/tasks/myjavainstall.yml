@@ -1,7 +1,7 @@
 ---
 - name: update package
   apt:
-    update_cashe: yes
+    update_cache: yes
 
 - name: install java17
   apt:
