@@ -11,7 +11,7 @@
     state: directory
 
 - name: extract tomcat tar file
-  unarchieve:
+  unarchive:
     src: /home/vip/apache-tomcat-10.1.34.tar.gz
     dest: /opt/tomcat
     remote_src: yes
